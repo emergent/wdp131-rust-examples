@@ -1,0 +1,16 @@
+[package]
+name = "actix-web-blog"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.1.0"
+anyhow = "1.0.62"
+diesel = { version = "2.0.0", features = ["r2d2", "sqlite", "returning_clauses_for_sqlite_3_35"] }
+libsqlite3-sys = { version = "0.25.1", features = ["bundled"] }
+serde = { version = "1.0.144", features = ["derive"] }
+thiserror = "1.0.32"
+tracing = "0.1.36"
+tracing-subscriber = "0.3.15"
