@@ -1,0 +1,21 @@
+[tasks.watch]
+run_task = [
+    { name = ["clippy", "test"] }
+]
+watch = true
+
+[tasks.clippy]
+command = "cargo"
+args = ["clippy"]
+
+[tasks.test]
+command = "cargo"
+args = ["test"]
+
+[tasks.run]
+command = "cargo"
+args = ["run"]
+
+[tasks.migrate-db]
+command = "diesel"
+args = ["migration", "run"]
