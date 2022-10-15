@@ -15,7 +15,3 @@ args = ["test"]
 [tasks.run]
 command = "cargo"
 args = ["run"]
-
-[tasks.migrate-db]
-command = "diesel"
-args = ["migration", "run"]
