@@ -1,13 +1,13 @@
 use actix_web::{web, App, HttpResponse, HttpServer};
-use serde::{Deserialize, Serialize};
+use serde::{Deserialize, Serialize}; // (d1)
 
-#[derive(Deserialize)]
+#[derive(Deserialize)] // (d2)
 struct HelloQuery {
     name: String,
     age: u32,
 }
 
-#[derive(Serialize)]
+#[derive(Serialize)] // (d3)
 struct HelloResponse {
     greet: String,
 }
@@ -16,14 +16,14 @@ struct HelloResponse {
 async fn hello(
     query: web::Query<HelloQuery>,
 ) -> HttpResponse {
-    let query = query.into_inner();
+    let query = query.into_inner(); // (d4)
     let message = format!(
         "Hello, my name is {}! I am {} years old!",
         query.name, query.age
     );
-    let h = HelloResponse { greet: message };
+    let h = HelloResponse { greet: message }; // (d5)
 
-    HttpResponse::Ok().json(h)
+    HttpResponse::Ok().json(h) // (d6)
 }
 
 #[actix_web::main]
