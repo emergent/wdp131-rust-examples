@@ -13,9 +13,7 @@ fn main() {
     {
         let greet = Greet { word: hello };
         greet.say();
-        // greetはここで解放される
-    }
+    } // greetはここで解放される
 
     println!("{}", hello);
-    // helloはここで解放される
-}
+} // helloはここで解放される
