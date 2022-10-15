@@ -10,8 +10,9 @@ fn main() {
     }
 
     let is_zero_str = match i {
+        // (d1)
         0 => "zero",
         _ => "not zero",
     };
-    println!("{}", is_zero_str); // otherが出力される
+    println!("{}", is_zero_str); // not zeroが出力される
 }

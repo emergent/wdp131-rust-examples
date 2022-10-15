@@ -1,17 +1,16 @@
-// (d1)
 struct Fruit {
+    // (d1)
     name: String,
 }
 
-// (d2)
 impl Fruit {
+    // (d2)
     fn get_name(&self) -> &str {
         &self.name
     }
 }
 
-// (d3)
-struct Rectangle(i32, i32);
+struct Rectangle(i32, i32); // (d3)
 
 impl Rectangle {
     fn calc_area(&self) -> i32 {
@@ -19,22 +18,17 @@ impl Rectangle {
     }
 }
 
-// d5）
-struct Unit;
+struct Unit; // (d5)
 
 fn main() {
-    // Fruit構造体の利用
+    // 定義した構造体の利用
     let banana = Fruit {
         name: String::from("Banana"),
     };
-    println!("{}", banana.get_name());
-    //=> Banana
+    println!("{}", banana.get_name()); // Banana
 
-    // Rectangle構造体の利用
     let rect = Rectangle(10, 20);
-    println!("{}", rect.calc_area());
-    //=> 200
+    println!("{}", rect.calc_area()); // 200
 
-    // Unit構造体の利用
     let _unit = Unit;
 }
