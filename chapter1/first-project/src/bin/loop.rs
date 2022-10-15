@@ -5,7 +5,7 @@ fn main() {
 
     let mut count = 0;
     while count < 10 {
-        count += 1; // count++ のような表記はできません
+        count += 1; // count++ のような表記はできない
     }
 
     loop {

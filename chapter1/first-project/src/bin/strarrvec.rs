@@ -1,5 +1,5 @@
 fn main() {
-    // 文字列は、大きく&str型とString型があります (d1)
+    // 文字列は、大きく&str型とString型がある (d1)
     let str_slice: &str = "world";
     let _string: String = String::from(str_slice);
     let _string_format: String =
