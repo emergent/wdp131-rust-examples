@@ -5,6 +5,7 @@ WEB+DB PRESS No.131の特集「Rust入門」にて掲載したサンプルコー
 ## 第1章
 
 - [first-project](./chapter1/first-project/)
+  - 基礎文法で説明しているスニペットは`src/bin`ディレクトリ配下にあります
 
 ## 第2章
 
@@ -28,5 +29,5 @@ WEB+DB PRESS No.131の特集「Rust入門」にて掲載したサンプルコー
 ## extra
 
 - [actix-web-blog-extra](./extra/actix-web-blog-extra/)
-    - 第3章のactix-web-blogに、誌面に掲載しきれなかったAPIや型定義を追加したもの
+    - 第3章のactix-web-blogに、誌面で紹介していない実装も追加した例です
 
